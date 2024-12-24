@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes element sizing more intuitive */
+    max-width: 100%; /* Ensures elements don't exceed the container width */
+  }
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #476f3e; /* Dark brown background */
+    padding: 20px;
+}
+
+.nav-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+    justify-content: space-around; /* Even spacing around items */
+}
+
+.nav-list li {
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.nav-list a {
+    color: rgb(220, 239, 216); /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding for clickable area */
+    display: block; /* Make the anchor block level for proper padding */
+}
+
+.nav-list a:hover {
+    background-color: #659551; /* Lighter brown on hover */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.nav-list li:hover {
+    background-color: #88d285; /* Change li background on hover */
+}
+
+
+
+
+.intro {
+    text-align: center; /* Center the text */
+    padding: 50px; /* Add padding for spacing */
+    background-color: #f5f5f5b9; /* Light grey background for the introduction */
+}
+
+.intro h1 {
+    color: #0e491e; /* Matching dark brown color for the heading */
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+.intro p {
+    color: #1d4e19; /* Dark grey color for the paragraph text */
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    max-width: 800px; /* Max width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in the container */
+    justify-content: center; /* Center the items */
+    padding: 20px; /* Padding for the gallery section */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between rows of items */
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Max width for the overall gallery */
+}
+
+.item {
+    background-color: #345931; /* Light brown background for items */
+    border-radius: 10px; /* Rounded corners for items */
+    box-shadow: 0 4px 8px rgba(18, 53, 6, 0.2); /* Shadow effect */
+    width: calc(33.33% - 20px); /* Width for the first two rows (3 items each) */
+    margin: 10px; /* Margin around items */
+    text-align: center; /* Center text in the item */
+}
+
+.item img {
+    width: 100%; /* Full width of the item */
+    height: 200px; /* Uniform height for images */
+    object-fit: cover; /* Cover the space while maintaining aspect ratio */
+    border-top-left-radius: 10px; /* Rounded corner for the image */
+    border-top-right-radius: 10px; /* Rounded corner for the image */
+}
+
+.item p {
+    padding: 10px; /* Padding for paragraph */
+    color: #11471e; /* Dark grey text color */
+}
+
+/* Media query for the last two items in a smaller screen */
+@media (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px); /* Two items on smaller screens */
+    }
+}
+
+
+
+.galery1{display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;}
+
+.container2{display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 1200px;
+margin: 0 auto;} /* Center the container */
+
+
+.item {
+    background-color: #58a24e; /* Light brown background for items */
+    border-radius: 10px; /* Rounded corners for items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin: 10px; /* Margin around items */
+    overflow: hidden; /* Hide overflow to maintain design */
+    transition: transform 0.3s; /* Transition for scaling effect */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.item img {
+    width: 100%; /* Full width of the item */
+    height: 200px; /* Uniform height for images */
+    object-fit: cover; /* Cover the space while maintaining aspect ratio */
+    border-top-left-radius: 10px; /* Rounded corners for images */
+    border-top-right-radius: 10px; /* Rounded corners for images */
+    display: flex;
+}
+
+
+.boxer{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+
+}
+
+
+
+.section1{
+   
+    padding-left: 20px;
+    background-color: #417b36;
+    max-width: 100%;
+}
+
+
+.video1{
+ max-width: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Responsive design for specific breakpoints */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Default for small devices (phones, less than 768px) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    header {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Larger devices (tablets, 768px - 1200px) */
+  @media (min-width: 768px) and (max-width: 1200px) {
+    body {
+      font-size: 18px;
+    }
+  
+    header {
+      font-size: 24px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* Extra large devices (desktops, above 1200px) */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 20px;
+    }
+  
+    header {
+      font-size: 32px;
+    }
+  
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 30px;
+    }
+  }
+
+  body{
+    background-color: rgb(187, 218, 187);
+  }
